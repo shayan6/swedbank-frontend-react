@@ -1,0 +1,12 @@
+/* socialMediaIcons.css */
+.social-media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icons img {
+    width: 20px;
+    /* Adjust the size of the icons as needed */
+    margin-left: 10px;
+    /* Add spacing between icons */
+}

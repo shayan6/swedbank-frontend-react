@@ -7,7 +7,7 @@ header {
 .branding-bar {
     top: 0;
     position: sticky;
-    height: 3px;
+    height: 5px;
     background-color: var(--ui-color-orange);
 }
 
@@ -47,7 +47,7 @@ header {
     padding-bottom: 0.3rem;
 }
 
-.menu-item:hover {
+.menu-item.active, .menu-item:hover {
     background-color: var(--ui-color-lightgrey);
     color: var(--ui-color-orange);
 }

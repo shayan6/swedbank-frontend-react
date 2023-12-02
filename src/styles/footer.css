@@ -1,0 +1,39 @@
+/* footer.css */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--ui-color-extrasoft-bark);
+    padding: 20px;
+}
+
+footer {
+    border-top: 5px solid var(--ui-color-orange);
+}
+
+.footer-column {
+    max-width: 200px;
+}
+
+.footer-column h1 {
+    color: var(--ui-color-orange);
+}
+
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: black;
+    /* Swedbank yellow color */
+    text-decoration: none;
+}

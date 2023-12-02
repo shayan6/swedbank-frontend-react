@@ -1,6 +1,6 @@
 /* Card.css */
 .card {
-    border: 1px solid #ddd;
+    background-color: var(--ui-color-apricot);
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;

@@ -11,7 +11,10 @@ const Card = ({ heading, headingBackgroundColor, children }) => {
       <div className="card-heading" style={cardStyle}>
         <h2>{heading}</h2>
       </div>
-      <div className="card-content">{children}</div>
+      <div className="card-content">
+        {children}
+        <a href="#" style={{ textDecoration: 'none' }}>Read more...</a>
+      </div>
     </div>
   );
 };

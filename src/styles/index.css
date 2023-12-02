@@ -1,0 +1,21 @@
+body {
+    font-family: var(--ui-font-family-body);
+    font-size: var(--ui-font-size-body);
+    line-height: var(--ui-line-height-body);
+    color: var(--ui-color-bark);
+    background-color: var(--ui-color-apricot);
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 1260px;
+    flex-shrink: 0;
+    margin: 5rem auto auto;
+}
+
+h1 {
+    color: var(--ui-color-orange-text);
+    font: 32px/1 var(--ui-font-family-headlineblack);
+    margin: 0;
+}

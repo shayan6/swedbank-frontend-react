@@ -1,0 +1,25 @@
+/* Card.css */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-heading {
+    padding: 15px;
+    color: white;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-heading h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* Add more styles as needed */

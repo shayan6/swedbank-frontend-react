@@ -1,21 +1,18 @@
 .tab-card {
-    width: 100%;
-    background-color: #fff;
     border-radius: 8px;
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
+    margin: 20px 0;
 }
 
 .tab-content {
-    margin-top: 15px;
     display: flex;
     justify-content: space-around;
+    background: white;
 }
 
 .tabs {
+    max-width: 300px;
     display: flex;
-    border-bottom: 1px solid #ddd;
+    background-color: var(--ui-color-lightgrey);
 }
 
 .tab {
@@ -27,13 +24,15 @@
     transition: border-bottom 0.3s ease;
 }
 
-.tab:hover {
-    border-bottom: 2px solid var(--ui-color-orange);
+.tab:hover, .tab.active {
+    background-color: white;
+    color: var(--ui-color-orange);
 }
 
 /* payment style *****************************************************/
 .fancy-form {
     max-width: 500px;
+    min-width: 330px;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -102,4 +101,50 @@ input:focus {
 .pay-button:hover {
     background-color: var(--ui-color-orange);
 }
+
+
 /* calculator style *****************************************************/
+.fancy-calculator {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+
+/* welcom card style *****************************************************/
+.welcome-card {
+    display: flex;
+    background-color: var(--ui-color-mist);
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.welcome-card-image img {
+    margin-right: 20px;
+    width: 150px;
+    height: 180px;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .fancy-calculator {
+        display: block;
+    }
+
+    .calculator-col {
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+    .welcome-card {
+        display: block;
+        zoom: 0.8;
+    }
+}
+

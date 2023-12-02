@@ -40,8 +40,44 @@ tfoot {
 /* Add more styles as needed */
 
 /* Responsive Styles (Optional) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     table {
         font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        display: none;
+    }
+
+    th:first-child,
+    td:first-child,
+    th:last-child,
+    td:last-child {
+        display: table-cell;
+    }
+
+    /* Adjust the styling of the displayed columns as needed */
+    th:first-child,
+    td:first-child {
+        text-align: left;
+    }
+
+    th:last-child,
+    td:last-child {
+        text-align: right;
+    }
+
+    .row {
+        display: block;
+        /* Set to full width on smaller screens */
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+        margin-bottom: 20px;
+        /* Add space below each card on smaller screens */
     }
 }

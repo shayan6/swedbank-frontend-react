@@ -21,8 +21,13 @@ table {
 th,
 td {
     border-bottom: 1px solid #dddddd80;
-    text-align: left;
+    text-align: right;
     padding: 8px;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
 }
 
 th {
@@ -37,9 +42,6 @@ tfoot {
     font-size: large;
 }
 
-/* Add more styles as needed */
-
-/* Responsive Styles (Optional) */
 @media (max-width: 768px) {
     table {
         font-size: 14px;

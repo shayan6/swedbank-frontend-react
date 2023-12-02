@@ -17,12 +17,14 @@ const Header = ({ toggleNav, navActive }) => {
           <ul>
             <li>
               <Link to="/" className={`menu-item ${currentPath === '/' ? 'active' : ''}`}>
+                <br/>
                 <img src={HomeIcon} alt="Home icon" />
                 Home
               </Link>
             </li>
             <li>
               <Link to="/about" className={`menu-item ${currentPath === '/about' ? 'active' : ''}`}>
+                <br/>
                 <img src={WalletIcon} alt="Wallet icon" />
                 Everyday banking
               </Link>

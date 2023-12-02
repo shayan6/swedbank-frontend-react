@@ -11,11 +11,21 @@ body {
     width: 100%;
     max-width: 1260px;
     flex-shrink: 0;
-    margin: 5rem auto auto;
+    margin: 6rem auto auto;
 }
 
 h1 {
     color: var(--ui-color-orange-text);
     font: 32px/1 var(--ui-font-family-headlineblack);
     margin: 0;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+    .content {
+        margin: 1rem auto auto;
+    }
 }

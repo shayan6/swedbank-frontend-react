@@ -35,6 +35,7 @@ header {
 .navbar li {
     flex: 1;
 }
+
 .menu-item {
     text-decoration: none;
     color: black;
@@ -43,10 +44,11 @@ header {
     align-items: center;
     text-align: center;
     transition: color 0.3s ease-in-out;
-    padding-top: 1rem;
+    padding-bottom: 0.3rem;
 }
 
 .menu-item:hover {
+    background-color: var(--ui-color-lightgrey);
     color: var(--ui-color-orange);
 }
 
@@ -56,7 +58,7 @@ header {
     margin-bottom: 5px;
 }
 
-.menu-item.active::after {
+.menu-item.active::before {
     content: '';
     width: 100%;
     height: 3px;

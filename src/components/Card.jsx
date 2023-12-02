@@ -13,7 +13,7 @@ const Card = ({ heading, headingBackgroundColor, children }) => {
       </div>
       <div className="card-content">
         {children}
-        <a href="#" style={{ textDecoration: 'none' }}>Read more...</a>
+        <span style={{ color: 'blue' }}>Read more...</span>
       </div>
     </div>
   );

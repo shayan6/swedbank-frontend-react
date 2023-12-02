@@ -75,14 +75,14 @@ const Home = () => {
                 <div  className="table-container">
                     <h2>Your Swedbank Overview</h2>
                     <div className="button-container">
-                        <a href="#" onClick={handleDownloadPDF}>
+                        <span onClick={handleDownloadPDF}>
                             <img src={pdfImage} alt="PDF" />
                             PDF
-                        </a>
-                        <a href="#" onClick={handleDownloadCSV}>
+                        </span>
+                        <span onClick={handleDownloadCSV}>
                             <img src={pdfImage} alt="PDF" />
                             XSL
-                        </a>
+                        </span>
                     </div>
                 </div>
                 <table ref={tableRef}>

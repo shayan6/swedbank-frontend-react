@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SwedbankLogo from '../images/swedbank_logo.png';
 import HomeIcon from '../images/home.svg';

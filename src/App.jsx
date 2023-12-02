@@ -6,6 +6,7 @@ import './styles/header.css';
 import Header from './components/Header';
 import Footer from './components/Footer'; // Import the Footer component
 import Home from './pages/Home/Home';
+import EverydayBanking from './pages/EverydayBanking/EverydayBanking';
 
 const App = () => {
   const [navActive, setNavActive] = useState(false);
@@ -23,7 +24,7 @@ const App = () => {
           <section className="content" id="mainContent">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/about" element={<About />} /> */}
+              <Route path="/EverydayBanking" element={<EverydayBanking />} />
             </Routes>
           </section>
         </main>

@@ -23,7 +23,7 @@ const Header = ({ toggleNav, navActive }) => {
               </Link>
             </li>
             <li>
-              <Link to="/about" className={`menu-item ${currentPath === '/about' ? 'active' : ''}`}>
+              <Link to="/EverydayBanking" className={`menu-item ${currentPath === '/EverydayBanking' ? 'active' : ''}`}>
                 <br/>
                 <img src={WalletIcon} alt="Wallet icon" />
                 Everyday banking

@@ -37,3 +37,16 @@ footer {
     /* Swedbank yellow color */
     text-decoration: none;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    footer {
+        display: block;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+}

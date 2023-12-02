@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import "./style.css";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
 import { saveAs } from 'file-saver';
-import pdfImage from '../images/pdf.svg'; // Import the image
+import pdfImage from '../../images/pdf.svg'; // Import the image
 
 const Home = () => {
     const accountData = [
@@ -75,14 +75,14 @@ const Home = () => {
                 <div  className="table-container">
                     <h2>Your Swedbank Overview</h2>
                     <div className="button-container">
-                        <span onClick={handleDownloadPDF}>
+                        <a href="#" onClick={handleDownloadPDF}>
                             <img src={pdfImage} alt="PDF" />
                             PDF
-                        </span>
-                        <span onClick={handleDownloadCSV}>
+                        </a>
+                        <a href="#" onClick={handleDownloadCSV}>
                             <img src={pdfImage} alt="PDF" />
                             XSL
-                        </span>
+                        </a>
                     </div>
                 </div>
                 <table ref={tableRef}>
@@ -122,7 +122,7 @@ const Home = () => {
             <div className="section row">
                 <Card heading="Open" headingBackgroundColor="var(--ui-color-blue)">
                     <p>One of core values of Swedbank.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </Card>
 
                 <Card
@@ -130,12 +130,12 @@ const Home = () => {
                     headingBackgroundColor="var(--ui-color-tangerine)"
                 >
                     <p>One of core values of Swedbank.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </Card>
 
                 <Card heading="Simple" headingBackgroundColor="var(--ui-color-tulip)">
-                    <p>One of core values of Swedbank.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>► One of core values of Swedbank.</p>
+                    <p>► Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 </Card>
             </div>
         </>

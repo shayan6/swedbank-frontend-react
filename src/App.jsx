@@ -5,7 +5,7 @@ import './styles/index.css';
 import './styles/header.css';
 import Header from './components/Header';
 import Footer from './components/Footer'; // Import the Footer component
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 const App = () => {
   const [navActive, setNavActive] = useState(false);

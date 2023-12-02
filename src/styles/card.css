@@ -1,5 +1,6 @@
 /* Card.css */
 .card {
+    max-width: 400px;
     background-color: var(--ui-color-apricot);
     border-radius: 8px;
     overflow: hidden;
@@ -23,3 +24,8 @@
 }
 
 /* Add more styles as needed */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}

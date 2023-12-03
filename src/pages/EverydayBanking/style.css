@@ -45,11 +45,11 @@ label {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    position: relative;
 }
 
 label span {
     width: 150px;
-    /* Adjust the width as needed */
     margin-right: 10px;
     font-weight: bold;
 }
@@ -71,6 +71,20 @@ input:focus {
 
 .currency {
     margin-left: 8px;
+}
+
+select.error,
+input.error {
+  border-color: var(--ui-color-alert-red); /* Red border for inputs with errors */
+}
+
+.error-message {
+    font-size: 0.6rem;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    color: var(--ui-color-alert-red);
 }
 
 .save-button {

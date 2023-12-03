@@ -32,6 +32,30 @@ The project is organized into components for different features:
 
 4. Open your browser and visit http://localhost:3000.
 
+## Screenshots
+
+![Screenshot 1](/public/images/1.jpg)
+*Screenshot 1*
+
+![Screenshot 2](/public/images/2.jpg)
+*Screenshot 2*
+
+![Screenshot 3](/public/images/3.jpg)
+*Screenshot 3*
+
+![Screenshot 4](/public/images/4.jpg)
+*Screenshot 4*
+
+![Screenshot 5](/public/images/5.jpg)
+*Screenshot 5*
+
+![Screenshot 6](/public/images/6.jpg)
+*Screenshot 6*
+
+![Screenshot 7](/public/images/7.jpg)
+*Screenshot 7*
+
+
 ## Contact
 Thank you for checking out! If you have any questions or feedback, feel free to reach out.
 - Project Maintainer: [shayanshaikh996@gmail.com](mailto:shayanshaikh996@gmail.com)

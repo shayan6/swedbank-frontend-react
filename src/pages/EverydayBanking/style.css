@@ -181,7 +181,6 @@ input.error {
 }
 
 .welcome-card-image {
-    display: inline-block;
     animation: jump 2s infinite;
 }
 

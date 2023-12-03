@@ -72,7 +72,7 @@ const Calculator = () => {
         </label>
 
         <label htmlFor="interestRate">
-          <span>Interest Rate:</span>
+          <span>Interest Rate %:</span>
           <input
             type="number"
             id="interestRate"
@@ -82,13 +82,12 @@ const Calculator = () => {
             value={interestRate}
             onChange={handleInterestRateChange}
           />
-          %
         </label>
       </div>
 
       <div className="calculator-col" style={{ textAlign: 'right' }}>
-          <label>
-            <span style={{ marginRight: '100px' }}>Monthly Payment</span>
+          <label className="monthly-payment">
+            <span>Monthly Payment</span>
             <h1>{calculateMonthlyPayment()} Euros</h1>
           </label>
 

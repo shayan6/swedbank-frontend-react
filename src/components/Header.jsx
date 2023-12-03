@@ -16,14 +16,14 @@ const Header = ({ toggleNav, navActive }) => {
         <nav className={`navbar ${navActive ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/" className={`menu-item ${currentPath === '/' ? 'active' : ''}`}>
+              <Link to="/" onClick={toggleNav} className={`menu-item ${currentPath === '/' ? 'active' : ''}`}>
                 <br/>
                 <img src={HomeIcon} alt="Home icon" />
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/EverydayBanking" className={`menu-item ${currentPath === '/EverydayBanking' ? 'active' : ''}`}>
+              <Link to="/EverydayBanking" onClick={toggleNav} className={`menu-item ${currentPath === '/EverydayBanking' ? 'active' : ''}`}>
                 <br/>
                 <img src={WalletIcon} alt="Wallet icon" />
                 Everyday banking

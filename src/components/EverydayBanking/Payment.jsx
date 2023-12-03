@@ -36,7 +36,6 @@ const Payment = () => {
   };
 
   const handleSave = () => {
-    // Add your save logic here
     console.log("Form data saved:", {
       selectedAccount,
       selectedSavedPayment,
@@ -44,7 +43,6 @@ const Payment = () => {
       currency,
       description,
     });
-    // You can implement API calls or other logic to save the form data
   };
 
   return (
@@ -79,11 +77,7 @@ const Payment = () => {
       <label>
         <span>Amount:</span>
         <input type="number" value={amount} onChange={handleAmountChange} />
-      </label>
-
-      <label>
-        <span>Currency:</span>
-        <select value={currency} onChange={handleCurrencyChange}>
+        <select className="currency" value={currency} onChange={handleCurrencyChange}>
           {currencyOptions.map((currencyOption, index) => (
             <option key={index} value={currencyOption}>
               {currencyOption}
@@ -101,7 +95,7 @@ const Payment = () => {
         />
       </label>
 
-      <label>
+      <label className="buttons-container">
         <button type="button" onClick={handleSave} className="save-button">
             Save
         </button>

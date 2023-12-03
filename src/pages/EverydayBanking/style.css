@@ -162,6 +162,29 @@ input.error {
 }
 
 
+@keyframes jump {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.welcome-card-image {
+    display: inline-block;
+    animation: jump 2s infinite;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .fancy-calculator {

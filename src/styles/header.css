@@ -46,7 +46,8 @@ header {
     padding-bottom: 0.3rem;
 }
 
-.menu-item.active, .menu-item:hover {
+.menu-item.active,
+.menu-item:hover {
     background-color: var(--ui-color-lightgrey);
     color: var(--ui-color-orange);
 }
@@ -55,6 +56,16 @@ header {
     width: 20px;
     height: 20px;
     margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item span {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover img, .menu-item:hover span {
+    font-size: 1rem;
+    transform: translateY(-5px);
 }
 
 .menu-item.active::before {
@@ -69,7 +80,8 @@ header {
 .navbar {
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust as needed */
+    top: 60px;
+    /* Adjust as needed */
     left: 0;
     width: 100%;
     background-color: white;
@@ -97,6 +109,7 @@ header {
     .navbar {
         display: none;
     }
+
     .navbar.active {
         display: flex;
     }

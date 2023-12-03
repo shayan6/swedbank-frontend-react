@@ -23,7 +23,7 @@ const Header = ({ toggleNav, navActive }) => {
               >
                 <br />
                 <img src={HomeIcon} alt="Home icon" />
-                Home
+                <span>Home</span>
               </Link>
             </li>
             <li>
@@ -36,7 +36,7 @@ const Header = ({ toggleNav, navActive }) => {
               >
                 <br />
                 <img src={WalletIcon} alt="Wallet icon" />
-                Everyday banking
+                <span>Everyday banking</span>
               </Link>
             </li>
           </ul>

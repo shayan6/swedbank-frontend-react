@@ -5,7 +5,7 @@ const WelcomCard = () => {
   return (
     <div className="welcome-card">
       <div className="welcome-card-image">
-        <img src={helloWorld} alt="hello world"/>
+        <img src={helloWorld} alt="hello world" />
       </div>
       <div className="welcome-card-content">
         <h2>Welcome to Swedbank!</h2>
@@ -21,7 +21,9 @@ const WelcomCard = () => {
         <br />
         <span style={{ color: "blue" }}>Read more...</span>
       </div>
-      <button type="button" className="pay-button"> Go </button>
+      <button type="button" className="pay-button">
+        Go
+      </button>
     </div>
   );
 };

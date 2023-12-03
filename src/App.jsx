@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/variables.css';
-import './styles/index.css';
-import './styles/header.css';
-import Header from './components/Header';
-import Footer from './components/Footer'; // Import the Footer component
-import Home from './pages/Home/Home';
-import EverydayBanking from './pages/EverydayBanking/EverydayBanking';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./styles/variables.css";
+import "./styles/index.css";
+import "./styles/header.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer"; // Import the Footer component
+import Home from "./pages/Home/Home";
+import EverydayBanking from "./pages/EverydayBanking/EverydayBanking";
 
 const App = () => {
   const [navActive, setNavActive] = useState(false);

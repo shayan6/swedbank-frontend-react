@@ -1,6 +1,5 @@
 header {
     background-color: white;
-    /* box-shadow: 0 6px 36px var(--ui-modal-overlay); */
     padding: 10px 20px;
 }
 
@@ -94,7 +93,6 @@ header {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Media query for mobile */
 @media (max-width: 768px) {
     .navbar {
         display: none;

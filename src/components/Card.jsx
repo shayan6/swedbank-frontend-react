@@ -1,9 +1,9 @@
-import React from 'react';
-import '../styles/card.css'; // Import your styling for the Card
+import React from "react";
+import "../styles/card.css";
 
 const Card = ({ heading, headingBackgroundColor, children }) => {
   const cardStyle = {
-    backgroundColor: headingBackgroundColor || 'var(--ui-color-orange)', // Default background color if not provided
+    backgroundColor: headingBackgroundColor || "var(--ui-color-orange)", // Default background color if not provided
   };
 
   return (
@@ -13,7 +13,7 @@ const Card = ({ heading, headingBackgroundColor, children }) => {
       </div>
       <div className="card-content">
         {children}
-        <span style={{ color: 'blue' }}>Read more...</span>
+        <span style={{ color: "blue" }}>Read more...</span>
       </div>
     </div>
   );

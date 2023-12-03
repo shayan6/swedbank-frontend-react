@@ -1,4 +1,3 @@
-/* footer.css */
 footer {
     display: flex;
     justify-content: space-around;
@@ -34,11 +33,9 @@ footer {
 
 .footer-column a {
     color: black;
-    /* Swedbank yellow color */
     text-decoration: none;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
     footer {
         display: block;

@@ -1,6 +1,6 @@
-import React from 'react';
-import '../styles/footer.css';
-import SocialMediaIcons from './SocialMediaIcons';
+import React from "react";
+import "../styles/footer.css";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 const Footer = () => {
   return (
@@ -10,7 +10,10 @@ const Footer = () => {
         <h1>6 310 310</h1>
         <p>info@swedbank.ee</p>
         <p>SWEDBANK AS</p>
-        <p>Livalaia 8. 15040 Tallinn SWIFT kood/BIC: HABAEE2X Reg. number: 10060701</p>
+        <p>
+          Livalaia 8. 15040 Tallinn SWIFT kood/BIC: HABAEE2X Reg. number:
+          10060701
+        </p>
         <SocialMediaIcons />
       </div>
       <div className="footer-column">

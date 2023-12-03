@@ -75,7 +75,7 @@ input:focus {
 
 select.error,
 input.error {
-  border-color: var(--ui-color-alert-red); /* Red border for inputs with errors */
+    border-color: var(--ui-color-alert-red);
 }
 
 .error-message {

@@ -10,7 +10,6 @@ const Payment = () => {
   const [accountError, setAccountError] = useState("");
   const [savedPaymentError, setSavedPaymentError] = useState("");
   const [amountError, setAmountError] = useState("");
-  const [currencyError, setCurrencyError] = useState("");
   const [descriptionError, setDescriptionError] = useState("");
 
   const accountOptions = ["Account Name 1", "Account Name 2", "Account Name 3"];
@@ -64,11 +63,15 @@ const Payment = () => {
   };
 
   const renderError = (error, inputName) => {
-    return error && (
-      <div className="error-message">
-        {error}
-        {inputName && <style>{`#${inputName}.error { border-color: red; }`}</style>}
-      </div>
+    return (
+      error && (
+        <div className="error-message">
+          {error}
+          {inputName && (
+            <style>{`#${inputName}.error { border-color: red; }`}</style>
+          )}
+        </div>
+      )
     );
   };
 
@@ -82,7 +85,6 @@ const Payment = () => {
       !accountError &&
       !savedPaymentError &&
       !amountError &&
-      !currencyError &&
       !descriptionError
     ) {
       console.log("Form data saved:", {
@@ -105,7 +107,7 @@ const Payment = () => {
           value={selectedAccount}
           onChange={handleAccountChange}
           onBlur={validateAccount}
-          className={accountError ? 'error' : ''}
+          className={accountError ? "error" : ""}
           id="selectedAccount"
         >
           <option value="">Select an account</option>
@@ -115,7 +117,7 @@ const Payment = () => {
             </option>
           ))}
         </select>
-        {renderError(accountError, 'selectedAccount')}
+        {renderError(accountError, "selectedAccount")}
       </label>
 
       <label>
@@ -124,7 +126,7 @@ const Payment = () => {
           value={selectedSavedPayment}
           onChange={handleSavedPaymentChange}
           onBlur={validateSavedPayment}
-          className={savedPaymentError ? 'error' : ''}
+          className={savedPaymentError ? "error" : ""}
           id="selectedSavedPayment"
         >
           <option value="">Select a saved payment</option>
@@ -134,7 +136,7 @@ const Payment = () => {
             </option>
           ))}
         </select>
-        {renderError(savedPaymentError, 'selectedSavedPayment')}
+        {renderError(savedPaymentError, "selectedSavedPayment")}
       </label>
 
       <label>
@@ -144,7 +146,7 @@ const Payment = () => {
           value={amount}
           onChange={handleAmountChange}
           onBlur={validateAmount}
-          className={amountError ? 'error' : ''}
+          className={amountError ? "error" : ""}
           id="amount"
         />
         <select
@@ -159,7 +161,7 @@ const Payment = () => {
             </option>
           ))}
         </select>
-        {renderError(amountError, 'amount')}
+        {renderError(amountError, "amount")}
       </label>
 
       <label>
@@ -169,10 +171,10 @@ const Payment = () => {
           value={description}
           onChange={handleDescriptionChange}
           onBlur={validateDescription}
-          className={descriptionError ? 'error' : ''}
+          className={descriptionError ? "error" : ""}
           id="description"
         />
-        {renderError(descriptionError, 'description')}
+        {renderError(descriptionError, "description")}
       </label>
 
       <label className="buttons-container">

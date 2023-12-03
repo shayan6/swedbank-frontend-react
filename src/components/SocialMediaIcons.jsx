@@ -1,10 +1,10 @@
-import React from 'react';
-import '../styles/socialMediaIcons.css'; // Import your styling for the social media icons
-import facebook from '../images/social media icons/facebook.svg';
-import instagram from '../images/social media icons/instagram.svg';
-import youtube from '../images/social media icons/youtube.svg';
-import twitter from '../images/social media icons/twitter.svg';
-import skype from '../images/social media icons/skype.svg';
+import React from "react";
+import "../styles/socialMediaIcons.css"; // Import your styling for the social media icons
+import facebook from "../images/social media icons/facebook.svg";
+import instagram from "../images/social media icons/instagram.svg";
+import youtube from "../images/social media icons/youtube.svg";
+import twitter from "../images/social media icons/twitter.svg";
+import skype from "../images/social media icons/skype.svg";
 
 const SocialMediaIcons = () => {
   return (

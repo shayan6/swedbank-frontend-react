@@ -49,14 +49,14 @@ const Calculator = () => {
           step={1000}
           value={loanAmount}
           onChange={handleLoanAmountChange}
-          style={{ width: '100%' }}
+          style={{ width: "100%" }}
         />
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <span>€1000</span>
           <span>€10000</span>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <label htmlFor="loanPeriod">
           <span>Loan Period:</span>
@@ -85,16 +85,16 @@ const Calculator = () => {
         </label>
       </div>
 
-      <div className="calculator-col" style={{ textAlign: 'right' }}>
-          <label className="monthly-payment">
-            <span>Monthly Payment</span>
-            <h1>{calculateMonthlyPayment()} Euros</h1>
-          </label>
+      <div className="calculator-col" style={{ textAlign: "right" }}>
+        <label className="monthly-payment">
+          <span>Monthly Payment</span>
+          <h1>{calculateMonthlyPayment()} Euros</h1>
+        </label>
 
-          <button type="button" onClick={handleSave} className="pay-button">
-            Apply
-          </button>
-        </div>
+        <button type="button" onClick={handleSave} className="pay-button">
+          Apply
+        </button>
+      </div>
     </div>
   );
 };

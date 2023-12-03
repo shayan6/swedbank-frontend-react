@@ -3,18 +3,10 @@
     --ui-color-orange: #ff5f00;
     --ui-color-orange-text: #fb4f00;
     --ui-color-tangerine: #ff9100;
-    --ui-color-pineapple: #fdc92a;
-    --ui-color-peach: #fff1cd;
     --ui-color-apricot: #fdf6ee;
   
     /* =================== Complementary colours and tints ================== */
-    --ui-color-turquoise: #31a3ae;
-    --ui-color-teal: #257886;
-    --ui-color-seafoam: #8acdc3;
-    --ui-color-aqua: #bbead9;
-    --ui-color-sky: #dbf8ed;
     --ui-color-mist: #ecf9f3;
-  
     --ui-color-lilac: #c5569a;
     --ui-color-tulip: #990066;
     --ui-color-lavender: #d28ac5;
@@ -42,13 +34,6 @@
     
     /* =================== Alert colors ================== */
     --ui-color-alert-red: #c5131c;
-    --ui-color-alert-red-tint: #f9ded3;
-    --ui-color-alert-green: #51971b;
-    --ui-color-alert-green-tint: #f2f7eb;
-    --ui-color-alert-yellow: #f9ce22;
-    --ui-color-alert-yellow-tint: #fff3d5;
-    --ui-color-alert-blue: #4572c0;
-    --ui-color-alert-blue-tint: #e8eff9;
 
     /* =================== Official font families ================== */
     --ui-font-family-subtitlemedium: 'Roboto', sans-serif;
@@ -66,41 +51,5 @@
     --ui-transition-function: ease-out;
 
     /* =================== Focus & Hover =========================== */
-    --ui-color-hover: var(--ui-color-peach);
-    --ui-focus-color: var(--ui-color-blue);
-    /* #1601ff (swedish) */
-    --ui-focus-width: 2px;
-    --ui-focus-style: solid;
-    --ui-focus-ring: var(--ui-focus-width) var(--ui-focus-style) var(--ui-focus-color);
-    --ui-focus-offset: 0;
-    --ui-focus-negative-offest: calc(var(--ui-focus-width) * -1);
     --ui-color-tap: rgba(254, 236, 190, 0.5);
-
-    /* =================== Layout ================================== */
-    /*
-        Add here layout (box-model) related common properties: like borders,
-        shadows, margins, padding, etc.
-      */
-    --ui-brandingbar-height: 3px;
-    --ui-header-toolbar-height: 50px;
-    --ui-header-height: 60px;
-    --ui-nav-top: calc(var(--ui-header-height) + var(--ui-brandingbar-height));
-    --ui-modal-overlay: rgba(var(--ui-color-bark-rgb), 0.6);
-    --ui-border-radius: 3px;
-    --ui-popover-filter-shadow: drop-shadow(0 0 4px rgba(0, 0, 0, .19));
-    --ui-popover-filter-shadow-top: drop-shadow(0 -3px 4px rgba(0, 0, 0, .145));
-    --ui-popover-filter-shadow-bottom: drop-shadow(0 4px 3px rgba(0, 0, 0, .19));
-    --ui-popover-box-shadow: 0 2px 20px rgba(0, 0, 0, .25);
-
-    /* =================== iframe helpers ================================== */
-    --ui-content-height: 100%;
-    --ui-viewport-top: 0;
-    --ui-viewport-top-offset: 0;
-    --ui-content-bottom: 0;
-
-    /* =================== Form Elements ================== */
-    /* =================== Legacy (to remove) ================== */
-    --ui-color-input-border: #bcd8db;
-    --ui-color-input-subborder: #c4e6e1;
-    --ui-color-input: #f1faf6;
 }

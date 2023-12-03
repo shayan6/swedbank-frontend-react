@@ -46,6 +46,7 @@ label {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
+    justify-content: space-around;
 }
 
 label span {
@@ -144,7 +145,6 @@ input.error {
     margin-right: 5rem;
 }
 
-
 /* welcom card style *****************************************************/
 .welcome-card {
     display: flex;
@@ -194,6 +194,10 @@ input.error {
         max-width: 100%;
         text-align: left;
         margin-bottom: 3rem;
+    }
+    
+    .monthly-payment span {
+        text-align: left;
     }
 
     .welcome-card {
